@@ -10,7 +10,7 @@ import {
 import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
-import BookDetails from './BookDetails/BookDetails';
+import BookDetails from './components/BookDetails/BookDetails';
 import ListedBooks from './components/ListedBooks/ListedBooks';
 import PagesToRead from './components/PagesToRead/PagesToRead';
 
@@ -33,13 +33,13 @@ const router = createBrowserRouter([
       {
         path: '/react-book-vibe/pages',
         element: <PagesToRead></PagesToRead>,
-        loader: () => fetch('./../books.json'),
+        loader: () => fetch('./books.json'),
 
       },
       {
         path: '/react-book-vibe/listed',
         element: <ListedBooks></ListedBooks>,
-        loader: () => fetch('./../books.json'),
+        loader: () => fetch('./books.json'),
       },
 
     ]

@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { setToLocalStorage } from "../utilities/localStorage";
+import { setToLocalStorage } from "../../utilities/localStorage";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,10 +10,9 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === parseInt(id));
     const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
     const [tag1, tag2, tag3] = tags;
-    // console.log(image)
 
     const handleSaveData = (id, localStorageName) => {
-        setToLocalStorage(id,localStorageName);
+        setToLocalStorage(id, localStorageName);
         toast('Successfully Added to : ' + localStorageName.toUpperCase());
     }
 
@@ -21,7 +20,7 @@ const BookDetails = () => {
         <div className="grid place-items-center min-h-screen">
             <div className="flex gap-12">
                 <img
-                    src={`./../../public/${image}`} className="w-1/2 p-20 bg-gray-100 rounded-2xl" />
+                    src={`./../public/${image}`} className="w-1/2 p-20 bg-gray-100 rounded-2xl" />
                 <div className="w-1/2">
                     <h1 className="text-[40px] font-bold">{bookName}</h1>
                     <h3 className="text-xl font-medium"><span>By </span>{author}</h3>
@@ -47,7 +46,7 @@ const BookDetails = () => {
                         <button onClick={() => handleSaveData(id, 'read')} className="btn btn-outline px-7 text-lg">Read</button>
                         <button onClick={() => handleSaveData(id, 'wishlist')} className="btn bg-[#50B1C9] text-white text-lg px-7">Wishlist</button>
                     </div>
-                    <ToastContainer/>
+                    <ToastContainer />
 
                 </div>
             </div>

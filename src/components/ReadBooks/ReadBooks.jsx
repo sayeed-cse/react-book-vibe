@@ -11,14 +11,14 @@ const ReadBooks = ({ books, sortBy }) => {
 
         const readBookIds = getLocalStorageData('read');
 
-        const getReadBooks = allBooks.filter(book => readBookIds.find(id => id == book.bookId));
+        const getReadBooks = allBooks && allBooks.filter(book => readBookIds.find(id => id == book.bookId));
         setReadBooks(getReadBooks);
     }, [allBooks, books, sortBy]);
 
     return (
         <div>
             {
-                readBooks.map(book => <ListedBook key={book.bookId} book={book}></ListedBook>)
+                readBooks && readBooks.map(book => <ListedBook key={book.bookId} book={book}></ListedBook>)
             }
         </div>
     );

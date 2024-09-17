@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Book = ({ book }) => {
     const { bookId,bookName, author, image, rating, category, tags } = book;
     return (
-        <Link to={`/bookDetails/${bookId}`}>
+        <Link to={`/react-book-vibe/bookDetails/${bookId}`}>
             <div className="card bg-base-100 border">
                 <figure className="m-10 bg-gray-100 rounded-xl">
                     <img

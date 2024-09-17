@@ -28,7 +28,7 @@ const PagesToRead = () => {
                 <XAxis dataKey="bookName" />
                 <YAxis />
                 <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
-                    {books.map((entry, index) => (
+                    {books && books.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index % 20]} />
                     ))}
                 </Bar>

@@ -8,14 +8,12 @@ const ListedBook = ({ book }) => {
             <div className="flex items-center gap-12">
                 <div className="bg-gray-100 py-5 px-12 rounded-2xl">
                 <img
-                    src={`./../../public/${image}`} className="w-40  rounded-2xl" />
+                    src={`./${image}`} className="w-40  rounded-2xl" />
                 </div>
                 
                 <div className="">
                     <h1 className="text-[40px] font-bold">{bookName}</h1>
                     <h3 className="text-xl font-medium"><span>By </span>{author}</h3>
-
-                    {/* <p className="py-6"><span className="font-bold">Review: </span>{review}</p> */}
                     <div className="w-2/3 flex flex-wrap items-center gap-2 py-6 mb-6 border-b">
                         <p className="font-bold">Tag</p>
                         <p className="text-[#23BE0A] font-medium py-2 px-4 rounded-full me-3 bg-green-50">{tag1}</p>
