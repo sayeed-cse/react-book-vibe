@@ -20,7 +20,7 @@ const BookDetails = () => {
         <div className="grid place-items-center min-h-screen">
             <div className="flex gap-12">
                 <img
-                    src={`./../${image}`} className="w-1/2 p-20 bg-gray-100 rounded-2xl" />
+                    src={`${image}`} className="w-1/2 p-20 bg-gray-100 rounded-2xl" />
                 <div className="w-1/2">
                     <h1 className="text-[40px] font-bold">{bookName}</h1>
                     <h3 className="text-xl font-medium"><span>By </span>{author}</h3>
