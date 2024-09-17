@@ -1,0 +1,83 @@
+{
+    "books": [
+      {
+        "bookId": 1,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "./assets/book1.png",
+        "review": "A timeless novel about racial injustice in the deep South, told through the eyes of young Scout Finch.",
+        "totalPages": 281,
+        "rating": 4.9,
+        "category": "Fiction",
+        "tags": ["Classic", "Courtroom", "Racial Injustice"],
+        "publisher": "J.B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+      },
+      {
+        "bookId": 2,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "./assets/book2.png",
+        "review": "A dystopian novel that explores the dangers of totalitarianism and extreme political ideology.",
+        "totalPages": 328,
+        "rating": 4.8,
+        "category": "Dystopian",
+        "tags": ["Totalitarianism", "Political Fiction", "Future"],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+      },
+      {
+        "bookId": 3,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "./assets/book3.png",
+        "review": "A classic tale of the American Dream gone awry, set in the Roaring Twenties.",
+        "totalPages": 180,
+        "rating": 4.4,
+        "category": "Classic",
+        "tags": ["American Dream", "Tragedy", "Wealth"],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+      },
+      {
+        "bookId": 4,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "./assets/book4.png",
+        "review": "A tale of teenage rebellion and existential angst, narrated by the iconic Holden Caulfield.",
+        "totalPages": 214,
+        "rating": 4.2,
+        "category": "Young Adult",
+        "tags": ["Coming of Age", "Rebellion", "Psychological"],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+      },
+      {
+        "bookId": 5,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "./assets/book5.png",
+        "review": "A brilliant commentary on British society and class, filled with wit, romance, and misunderstandings.",
+        "totalPages": 279,
+        "rating": 4.7,
+        "category": "Romance",
+        "tags": ["Love", "Society", "Class"],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+      },
+      {
+        "bookId": 6,
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "./assets/book6.png",
+        "review": "A prelude to the Lord of the Rings trilogy, this is a fantastic tale of adventure and discovery.",
+        "totalPages": 310,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": ["Adventure", "Fantasy", "Epic"],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+      }
+    ]
+  }
+  
