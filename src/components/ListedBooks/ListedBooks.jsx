@@ -15,7 +15,7 @@ const ListedBooks = () => {
 
     useEffect(() => {
         setSortedBooks(books);
-    }, [books])
+    }, [books,sortBy])
 
     const handleSortBy = (sortBy) => {
         setSortBy(sortBy);
