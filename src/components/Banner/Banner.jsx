@@ -4,7 +4,7 @@ const Banner = () => {
         <div className="hero  min-h-96 bg-gray-100 py-16 px-28  rounded-3xl">
             <div className="hero-content flex-col lg:flex-row-reverse ">
                 <img
-                    src="./public/assets/book.png"
+                    src={`./assets/book.png`}
                     className="" />
                 <div>
                     <h1 className="text-6xl font-bold leading-relaxed">Books to freshen up your bookshelf!</h1>
