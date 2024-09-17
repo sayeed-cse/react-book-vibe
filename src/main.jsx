@@ -16,28 +16,28 @@ import PagesToRead from './components/PagesToRead/PagesToRead';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/react-book-vibe/",
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
-        path: "/",
+        path: "/react-book-vibe/",
         element: <Home></Home>,
         loader: () => fetch('./books.json'),
       },
       {
-        path: "/bookDetails/:id",
+        path: "/react-book-vibe/bookDetails/:id",
         element: <BookDetails></BookDetails>,
         loader: () => fetch('./books.json'),
       },
       {
-        path: '/pages',
+        path: '/react-book-vibe/pages',
         element: <PagesToRead></PagesToRead>,
         loader: () => fetch('./../books.json'),
 
       },
       {
-        path: '/listed',
+        path: '/react-book-vibe/listed',
         element: <ListedBooks></ListedBooks>,
         loader: () => fetch('./../books.json'),
       },
