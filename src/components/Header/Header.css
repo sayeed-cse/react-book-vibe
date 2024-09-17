@@ -1,0 +1,9 @@
+li>a {
+    font-size: 18px;
+}
+li > a.active{
+    border: 1px solid green !important;
+    background-color: transparent !important;
+    color: green !important;
+    font-weight: 500;
+}
