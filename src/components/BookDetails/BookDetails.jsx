@@ -18,11 +18,11 @@ const BookDetails = () => {
 
     return (
         <div className="grid place-items-center min-h-screen">
-            <div className="flex gap-12">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 m-5 lg:m-0">
                 <img
-                    src={`${image}`} className="w-1/2 p-20 bg-gray-100 rounded-2xl" />
-                <div className="w-1/2">
-                    <h1 className="text-[40px] font-bold">{bookName}</h1>
+                    src={`${image}`} className="lg:w-1/2 p-5 lg:p-20 bg-gray-100 rounded-2xl" />
+                <div className="lg:w-1/2">
+                    <h1 className="text-2xl lg:text-[40px] font-bold">{bookName}</h1>
                     <h3 className="text-xl font-medium"><span>By </span>{author}</h3>
                     <h3 className="text-xl font-medium border-y py-4 my-6">{category}</h3>
                     <p className="py-6"><span className="font-bold">Review: </span>{review}</p>

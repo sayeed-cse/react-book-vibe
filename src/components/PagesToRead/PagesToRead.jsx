@@ -21,7 +21,7 @@ const PagesToRead = () => {
     };
 
     return (
-        <div className="mx-auto p-28 bg-gray-50 rounded-3xl">
+        <div className="mx-auto p-4 lg:p-28 bg-gray-50 rounded-3xl">
             <BarChart className="mx-auto"
                 width={1200} height={700} data={books} margin={{ top: 20, right: 30, left: 20, bottom: 5, }}>
                 <CartesianGrid strokeDasharray="3 3" />
