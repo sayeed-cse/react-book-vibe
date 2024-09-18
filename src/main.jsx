@@ -13,6 +13,7 @@ import Home from './components/Home/Home';
 import BookDetails from './components/BookDetails/BookDetails';
 import ListedBooks from './components/ListedBooks/ListedBooks';
 import PagesToRead from './components/PagesToRead/PagesToRead';
+import About from './components/About/About';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
         element: <ListedBooks></ListedBooks>,
         loader: () => fetch('./books.json'),
       },
+      {
+        path : '/react-book-vibe/about',
+        element : <About></About>,
+      }
 
     ]
   },

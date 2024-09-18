@@ -6,6 +6,7 @@ const Header = () => {
         <li><NavLink to='/react-book-vibe/'>Home</NavLink></li>
         <li><NavLink to='/react-book-vibe/listed'>Listed Books</NavLink></li>
         <li><NavLink to='/react-book-vibe/pages'>Pages to Read</NavLink></li>
+        <li><NavLink to='/react-book-vibe/about'>About Us</NavLink></li>
     </>;
     return (
         <div className="my-12">
