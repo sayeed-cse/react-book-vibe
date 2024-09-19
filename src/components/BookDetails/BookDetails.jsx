@@ -3,6 +3,7 @@ import { setToLocalStorage } from "../../utilities/localStorage";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet";
 
 const BookDetails = () => {
     const { books } = useLoaderData();
@@ -18,6 +19,9 @@ const BookDetails = () => {
 
     return (
         <div className="grid place-items-center min-h-screen">
+            <Helmet>
+                <title>Book Vibe | BookDetails</title>
+            </Helmet>
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 m-5 lg:m-0">
                 <img
                     src={`./../${image}`} className="lg:w-1/2 p-5 lg:p-20 bg-gray-100 rounded-2xl" />

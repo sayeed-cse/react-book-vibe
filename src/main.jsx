@@ -43,16 +43,15 @@ const router = createBrowserRouter([
         loader: () => fetch('./books.json'),
       },
       {
-        path : '/react-book-vibe/about',
-        element : <About></About>,
+        path: '/react-book-vibe/about',
+        element: <About></About>,
       }
-
     ]
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </StrictMode>,
 )

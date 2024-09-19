@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import Wishlist from "../Wishlist/Wishlist";
 import { useLoaderData } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const ListedBooks = () => {
     const [sortedBooks, setSortedBooks] = useState([]);
@@ -40,6 +41,10 @@ const ListedBooks = () => {
     }
     return (
         <div>
+            <Helmet>
+            <title>Book Vibe | Listed Books</title>
+
+            </Helmet>
             <h2 className="py-8 text-center font-bold text-3xl bg-gray-100 rounded-2xl">Books</h2>
             <div className="flex justify-center my-8">
                 <details className="dropdown">
